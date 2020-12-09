@@ -6,6 +6,7 @@ import com.github.fierioziy.particlenativeapi.core.ParticleNativeCore;
 import me.bscal.effects.BleedEffect;
 import me.bscal.effects.FractureEffect;
 import me.bscal.logcraft.LogCraft;
+import me.bscal.logcraft.LogLevel;
 import me.bscal.statuses.BleedStatus;
 import me.bscal.statuses.FractureStatus;
 import me.bscal.statuses.Statuses;
@@ -15,6 +16,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class StatusPack extends JavaPlugin
 {
+	public static LogCraft Logger;
 
 	private static StatusPack m_singleton;
 
@@ -27,6 +29,7 @@ public class StatusPack extends JavaPlugin
 		m_singleton = this;
 
 		m_particleAPI = ParticleNativeCore.loadAPI(this);
+		m_particles = m_particleAPI.getParticles_1_13();
 
 		// Uses Plugin?
 		//		if (!ParticleNativePlugin.isValid())
@@ -44,7 +47,8 @@ public class StatusPack extends JavaPlugin
 		Statuses.Get().GetStatusMgr().Register(new FractureStatus(), Statuses.Get().GetStatusMgr().GetTrigger(
 				EntityDamagedTrigger.class.getSimpleName()));
 
-		LogCraft.Log("Loading Statuses module [StatusPack]");
+		Logger = new LogCraft(this, LogLevel.DEVELOPER);
+		Logger.Log("Loading Statuses module [StatusPack]");
 	}
 
 	public static StatusPack Get()
