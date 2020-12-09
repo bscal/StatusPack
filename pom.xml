@@ -32,6 +32,11 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
+            <groupId>com.github.bscal</groupId>
+            <artifactId>LogCraft</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+        <dependency>
             <groupId>me.bscal.statuses</groupId>
             <artifactId>Statuses</artifactId>
             <version>0.0.1</version>
@@ -42,11 +47,6 @@
             <artifactId>ParticleNativeAPI-core</artifactId>
             <version>3.0.0</version>
             <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.github.bscal</groupId>
-            <artifactId>LogCraft</artifactId>
-            <version>1.1.6</version>
         </dependency>
     </dependencies>
     <build>
