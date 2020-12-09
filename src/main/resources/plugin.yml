@@ -1,0 +1,5 @@
+main: me.bscal.StatusPack
+name: StatusPack
+version: 0.0.1
+depend: [Statuses]
+api-version: 1.16
