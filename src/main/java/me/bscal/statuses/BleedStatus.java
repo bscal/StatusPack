@@ -1,6 +1,6 @@
 package me.bscal.statuses;
 
-import me.bscal.statuses.effects.BleedEffect;
+import me.bscal.effects.BleedEffect;
 import me.bscal.statuses.statuses.StatusBase;
 import me.bscal.statuses.statuses.StatusGroup;
 import me.bscal.statuses.triggers.StatusTrigger;

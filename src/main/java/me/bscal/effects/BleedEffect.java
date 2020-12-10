@@ -3,7 +3,7 @@ package me.bscal.effects;
 import me.bscal.StatusPack;
 import me.bscal.statuses.core.StatusInstance;
 import me.bscal.statuses.effects.TickEffect;
-import me.bscal.statuses.utils.SpigotUtils;
+import me.bscal.utils.SpigotUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.Color;
 

@@ -1,6 +1,6 @@
 package me.bscal.statuses;
 
-import me.bscal.statuses.effects.FractureEffect;
+import me.bscal.effects.FractureEffect;
 import me.bscal.statuses.statuses.StatusBase;
 import me.bscal.statuses.statuses.StatusGroup;
 import me.bscal.statuses.triggers.EntityDamagedTrigger;
